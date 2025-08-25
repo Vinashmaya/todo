@@ -1,0 +1,32 @@
+# top-most EditorConfig file
+root = true
+
+# 'insert_final_newline = false' should not remove last empty line
+
+[*]
+charset = utf-8
+end_of_line = lf
+# tab_width here is only used to represent tabs if indent_size is not set
+tab_width = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.php]
+indent_style = space
+indent_size = 4
+
+[*.js]
+indent_style = space
+tab_width = 4
+
+[*.{css,yml,html,svg,xml}]
+indent_style = space
+indent_size = 2
+
+[*.md]
+trim_trailing_whitespace = false
+insert_final_newline = false
+
+[/src/includes/theme.php]
+indent_style = space
+indent_size = 2
